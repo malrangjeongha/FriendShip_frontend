@@ -7,7 +7,7 @@ import 'package:http/http.dart' as http;
 
 class AuthProvider with ChangeNotifier{
   Future<void> login(Auth auth) async {
-    const url = 'https://410affb5-4f61-41b1-8858-a1870887f995.mock.pstmn.io/auth';  //mocksever
+    const url = 'url';
 
     var response = await http.post(Uri.parse(url),
       body: jsonEncode({
