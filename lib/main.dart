@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:friendship/view/pages/login_page.dart';
-import 'package:friendship/view/pages/main_page.dart';
+import 'package:friendship/ui/pages/login_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,12 +12,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'FriendShip',
-      //home: LogIn(),
-      initialRoute: '/login',
-      routes: {
-        '/login': (context) => LogIn(),
-        '/main': (context) => MainPage(),
-      },
+      home: LogIn(),
     );
   }
 }
